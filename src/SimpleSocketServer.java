@@ -54,10 +54,10 @@ public class SimpleSocketServer extends Thread {
         SimpleSocketServer server = new SimpleSocketServer(port);
         server.startServer();
 
-        // Automatically shutdown in 1 hour
+        // Automatically shutdown in 2 hour
 
         try {
-            Thread.sleep(600000);
+            Thread.sleep(1200000);
         } catch (Exception e) {
             e.printStackTrace();
         }

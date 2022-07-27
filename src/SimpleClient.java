@@ -45,7 +45,7 @@ public class SimpleClient {
                     out.flush();
                     //If the download message was received from the server. The file starts downloading
                     if (in.readUTF().equals("start download")) {
-                        System.out.println("Downloading...");
+                        System.out.println("Downloading ...");
                         FileOutputStream outputStream = new FileOutputStream(fileName);
                         byte[] bytes = new byte[1024];
                         while (true) {

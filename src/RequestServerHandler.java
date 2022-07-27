@@ -1,12 +1,14 @@
 import java.io.*;
 import java.net.Socket;
 import java.net.SocketException;
+
 class RequestServerHandler extends Thread {
     private final Socket socket;
+
     RequestServerHandler(Socket socket) {
         this.socket = socket;
     }
-   
+
     @Override
     public void run() {
         try {
